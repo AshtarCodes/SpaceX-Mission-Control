@@ -19,7 +19,7 @@ function getLatestLaunch(){
         //attempt to store images from API
         // data.links.flickr.original.forEach(img => imgStore.push(img)); 
         // toggle visibility: collapse; of information
-        document.querySelector("body > section.wrap1").classList.toggle('hidden');
+        document.querySelector(".wrap1").classList.toggle('hidden');
         document.querySelector('#missionName').innerText = data.name
         document.querySelector('#missionDetails').innerText = data.details
         // webcast        
@@ -40,7 +40,7 @@ function findRoadster () {
       console.log(data);
 
       // Toggle visibility: collapse; of information
-      document.querySelector("body > section.wrap2").classList.toggle('hidden')
+      document.querySelector(".wrap2").classList.toggle('hidden')
       // img
       document.querySelector('#roadsterImg').src = data.flickr_images
       //name
